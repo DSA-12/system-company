@@ -1,0 +1,19 @@
+1 Rice  5 
+
+2 Sugar  2 
+
+3 Milk  3 
+
+4 Bread  4 
+
+5 Eggs  12 
+
+6 Apples  6 
+
+7 Chicken  2 
+
+8 Cooking Oil  1 
+
+9 Tea  2 
+
+10 Onions  3 
