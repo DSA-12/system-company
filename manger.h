@@ -1,25 +1,37 @@
 #ifndef MANGER_H_
 #define MANGER_H_
+#include"employee.h"
+#include<vector>
+#include <string>
+
+using namespace std;
 
 class Manger
 {
 private:
     int ID = 0;
-    char password[10]{};
+    string password{};
+    vector<Employee> employees;
     static const int limite = 0;
 public:
+    //manger fuction
     Manger();
     ~Manger();
-    Manger(char password[10]);
-    void edititem(int id);
-    void editemployee(int id);
-    void deleteemployee(int id);
-    void deleteitem(int id);
-    void viewitem();
-    void viewemployee();
-    bool loginmanger(int id, char pass[10]);
+    Manger(int id,string password);
+    bool loginmanger(int id, string pass);
     void createmanger();
     bool getIDmanger();
+
+    //employee fuction
+    void viewemployee();
+    void editemployee(int id);
+    void deleteemployee(int id);
+    void creatmployee(int id, string pass);
+    
+    //items fuction
+    void viewitem();
+    void edititem(int id);
+    void deleteitem(int id);    
 };
 
 
